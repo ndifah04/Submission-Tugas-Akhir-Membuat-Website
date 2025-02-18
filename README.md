@@ -10,4 +10,4 @@ Sebagai contoh: Header berisi judul dan navigation.
 + Menyusun layout dengan menggunakan teknik flexbox, bukan float.
 
 BINTANG YANG SAYA DAPAT  
-![bintang.png](bintang)
+![bintang](bintang.png)
