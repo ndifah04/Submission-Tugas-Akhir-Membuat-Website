@@ -1,0 +1,267 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #FF9EAA;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-weight: 700;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #FFD0D0;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 100px 20px;
+    text-align: left;
+    flex-wrap: wrap;
+    background-color: #FFD0D0;
+    color: #fff;
+}
+.hero-image {
+    max-width: 40%;
+}
+.hero-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content {
+    max-width: 50%;
+    background-color: #FF9EAA;
+    border-radius: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-content button {
+    background-color: #FF9EAA;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: #A52A2A;
+}
+
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.about h2 {
+    color: #FF9EAA; 
+}
+
+.galeri {
+    padding: 50px 20px;
+    background-color: #FFD0D0;
+    color: #fff;
+    text-align: center;
+    
+}
+
+.galeri-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%; 
+    min-width: 250px
+}
+.card img {
+    width: 100%;
+    max-width: 200px; 
+    height: auto;
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    .galeri-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .card img {
+        max-width: 150px;
+    }
+}
+
+.card h3 {
+    color: #FF9EAA;
+}
+
+.contact {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #FF9EAA; 
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact input, .contact textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #FF9EAA;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #A52A2A;
+}
+
+footer {
+    background-color: #FF9EAA; 
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.slide img {
+    width: 80%;
+    max-width: 500px;
+    max-height: 300px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.dots-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 5px;
+    background-color: #bbb;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation: fadeEffect 1.5s;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+@media screen and (max-width: 600px) {
+    .slide img {
+        width: 90%;
+        max-width: 350px;
+        max-height: 250px;
+    }
+}

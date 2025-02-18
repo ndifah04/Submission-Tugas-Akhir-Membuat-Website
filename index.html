@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Submission: Tugas Akhir Membuat Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home"><b>Home</b></a></li>
+                <li><a href="#about"><b>About</b></a></li>
+                <li><a href="#galeri"><b>Galeri</b></a></li>
+                <li><a href="#contact"><b>Contact</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2 style="text-align: center;">HI👋🏻👋🏻👋🏻 Saya Galbi Nadifah</h2>
+                <p><b><em>Website </em>ini dibuat sebagai bagian dari penyelesaian tugas akhir dalam kelas Belajar Dasar Pemrograman Web, yang merupakan salah satu langkah penting dalam menyelesaikan seluruh materi dan tantangan yang diberikan dalam program Dicoding Camp DBS Foundation 2025. Program ini bertujuan untuk membekali peserta dengan pemahaman dasar mengenai pengembangan web, termasuk HTML, CSS, dan JavaScript, sehingga mereka dapat membangun situs web yang fungsional, responsif, dan sesuai dengan standar industri. Melalui tugas akhir ini, peserta diharapkan dapat menerapkan semua konsep yang telah dipelajari serta meningkatkan keterampilan dalam pengembangan web secara praktis.</p></b>
+            </div>
+            <aside class="hero-image">
+                <img src="hero.png" alt="Gambar Hero">
+            </aside>
+            <div class="hero-content">
+                <button id="cta-button">Get Started</button>
+            </div>
+        </section>
+
+        <article id="about" class="about">
+            <h2>About Us</h2>
+            <p>Galbi Nadifah adalah individu yang berdedikasi di bidang teknologi, khususnya dalam Cloud Computing, Computational Engineering, dan Big Data Analysis. Saat ini, ia sedang mengikuti program Bangkit 2024 dengan mayor Cloud Computing, di mana ia memperdalam pemahaman tentang infrastruktur cloud, manajemen sumber daya komputasi, serta implementasi layanan berbasis cloud. Selain itu, ia juga aktif dalam berbagai proyek, termasuk pengembangan aplikasi OptiLens untuk identifikasi katarak, serta pembuatan website e-commerce untuk UMKM bernama Algo Caffe. Dengan latar belakang akademik yang kuat di Universitas Muhammadiyah Makassar, Galbi telah meraih berbagai pencapaian, seperti juara tiga dalam kompetisi KTI nasional APSI 2023 dan nominasi sebagai mahasiswa berprestasi. Selain dunia teknologi, ia juga memiliki minat dalam sastra, terbukti dengan partisipasinya dalam kompetisi puisi dan cerpen tingkat nasional. Keterampilannya dalam pemrograman mencakup React, Java, dan Terraform, serta keahliannya dalam analisis big data dan mitigasi risiko kredit berbasis komputasional. Dengan semangat belajar yang tinggi dan pengalaman luas, ia berkomitmen untuk terus berkembang dan memberikan dampak positif di bidang teknologi dan masyarakat. <br>
+            <q>Jangan takut untuk bermimpi besar, tetapi pastikan langkah kecilmu setiap hari membawamu lebih dekat ke tujuan itu. Kesuksesan bukan tentang siapa yang paling cepat, tetapi siapa yang paling konsisten dan tidak menyerah🚀🔥  </q></p>
+        </article>
+
+        <section id="galeri" class="galeri">
+            <h2>Galeri</h2>
+            <div class="galeri-cards"></div>
+            </div>
+        </section>
+        <section id="slider" class="slider-container">
+            <div class="slider">
+                <div class="slide fade">
+                    <img src="slider1.jpeg" alt="Gambar 1">
+                </div>
+                <div class="slide fade">
+                    <img src="slider2.png" alt="Gambar 2">
+                </div>
+                <div class="slide fade">
+                    <img src="slider1.jpeg" alt="Gambar 3">
+                </div>
+                <div class="slide fade">
+                    <img src="slider2.png" alt="Gambar 4">
+                </div>
+                <div class="slide fade">
+                    <img src="slider1.jpeg" alt="Gambar 5">
+                </div>
+                <div class="slide fade">
+                    <img src="slider2.png" alt="Gambar 6">
+                </div>
+        
+                <!-- Tombol Next & Prev -->
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        
+                <!-- Dot Indicators -->
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <div class="hero-content">
+                <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Galbi nadifah.Submission Tugas Akhir. </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
